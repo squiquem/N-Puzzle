@@ -11,8 +11,8 @@ The only move one can do in the N-puzzle is to swap the empty cell with one of i
 	1 2 3		 1  2  3  4		   1  2  3  4  5
 	8   4		12 13 14  5		  16 17 18 19  6
 	7 6 5		11    15  6		  15 24    20  7
-				10  9  8  7		  14 23 22 21  8
-								  13 12 11 10  9
+	     		10  9  8  7		  14 23 22 21  8
+	     		           		  13 12 11 10  9
 
 ## Generate puzzles
 
