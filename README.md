@@ -16,17 +16,34 @@ The only move one can do in the N-puzzle is to swap the empty cell with one of i
 
 ## Generate puzzles
 
-	python3 res_npuzzle-gen.py -h
-____
+	python3 res_npuzzle-gen.py [-h] [-s] [-u] [-i ITERATIONS] size
 
-## Help
+	positional arguments:
+	size                Size of the puzzle's side. Must be >3.
 
-	python3 main.py -h
+	optional arguments:
+	-h, --help          show this help message and exit
+	-s, --solvable      Forces generation of a solvable puzzle. Overrides -u.
+	-u, --unsolvable    Forces generation of an unsolvable puzzle
+	-i ITERATIONS, --iterations ITERATIONS
+                        Number of passes
 ____
 
 ## Run
 
-	python3 main.py <puzzle>
+	python3 main.py [-h] [-g] [-u] [-hr HEURISTIC] [-v VARIANT] file
+
+	positional arguments:
+	file                puzzle file
+
+	optional arguments:
+	-h, --help          show this help message and exit
+	-g, --greedy        greedy bonus
+	-u, --ucs           uniform-cost bonus
+	-hr HEURISTIC, --heuristic HEURISTIC
+                        heuristic (md for manhattan_distance, hd for hamming_distance or lc for linear conflict)
+	-v VARIANT, --variant VARIANT
+                        coefficient for variant algorithm
 ____
 
 ## Return
